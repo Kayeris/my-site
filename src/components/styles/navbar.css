@@ -8,7 +8,7 @@
     justify-content: center;
 } /*background*/
 
-.link-section {
+.right-link-section {
     width: 100%;
     height: inherit;
     position: absolute;
@@ -18,10 +18,21 @@
     align-items: center;
 }
 
+.left-link-section {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
 .navbar-links {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    /* margin-right: 30px; */
+    margin-right: 7%;
+    margin-left: 7%;
     font-size: large;
     font-weight: medium;
 }
@@ -31,5 +42,5 @@
     height: auto;
     position: relative;
     align-items: center;
-    /* padding: 0.5%; */
+    padding: 0.5%;
 }

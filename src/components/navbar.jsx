@@ -7,11 +7,11 @@ function NavBar() {
     <nav>
       <div className="navbar">
         <div className="right-link-section">
-          <Link to="/search" className="navbar-links">
-            SEARCH
+          <Link to="/resume" className="navbar-links">
+            RESUME
           </Link>
-          <Link to="/signin" className="navbar-links">
-            SIGN IN
+          <Link to="/projects" className="navbar-links">
+            PROJECTS
           </Link>
         </div>
 
@@ -26,11 +26,11 @@ function NavBar() {
         </div>
 
         <div className="left-link-section">
-          <Link to="/search" className="navbar-links">
-            SEARCH
+          <Link to="/zworld" className="navbar-links">
+            Z-WORLD
           </Link>
-          <Link to="/signin" className="navbar-links">
-            SIGN IN
+          <Link to="/blog" className="navbar-links">
+            BLOG
           </Link>
         </div>
       </div>
