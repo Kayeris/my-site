@@ -1,0 +1,10 @@
+.landing-body {
+    background-image: url(./background.png);
+    background-size: cover;
+    padding-bottom: 1500px;
+}
+
+.remove-margin {
+    margin: 0px;
+    padding: 0px;
+}
