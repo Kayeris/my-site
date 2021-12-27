@@ -14,7 +14,7 @@
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 
@@ -24,15 +24,15 @@
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    /* justify-content: left; */
     align-items: center;
 }
 
 .navbar-links {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    margin-right: 7%;
-    margin-left: 7%;
+    margin-right: 10%;
+    margin-left: 10%;
     font-size: large;
     font-weight: medium;
 }
