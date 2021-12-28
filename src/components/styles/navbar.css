@@ -1,11 +1,13 @@
 .navbar {
-    background:transparent;
+    background:rgba(0, 0, 0, 0.75);
     width: 100%;
-    height: 100%;
+    height: 10vh;
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    z-index: 200;
     
 } /*background*/
 
@@ -22,7 +24,7 @@
 .left-link-section {
     width: 100%;
     height: inherit;
-    position: absolute;
+    position: absolute; 
     display: flex;
     flex-direction: row;
     /* justify-content: left; */
