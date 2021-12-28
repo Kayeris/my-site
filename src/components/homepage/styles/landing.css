@@ -1,14 +1,124 @@
 .landing-body {
     background-image: url(./background.png);
     background-size: cover;
-    padding-bottom: 1500px;
+    width: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+    background-attachment: fixed;
+    padding-block-start: 10vh;
 }
 
-.remove-margin {
+
+.hero-banner {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5vh;
+}
+
+.all-text {
+    vertical-align:middle;
+    padding-right: 3vw;
+}
+
+.my-name {
+    color: rgb(255, 255, 255);
+    font-family: Cabin;
     margin: 0px;
-    padding: 0px;
+    /* padding-left: 5%; */
+    /* padding-top: 5%;        change this to vertical align when the picture is in */
+    font-size: 7vw;
+    align-self: left;
 }
 
-.per-page {
-    color: turquoise;
+.sub-occupation {
+    font-family: Cabin;
+    text-align: left;
+    color: #F19C79;
+    font-style: italic;
+    font-size: 2vw;
+    margin: 0;
+}
+
+.edu-year {
+    font-family: Cabin;
+    text-align: left;
+    color: #89CFF0;
+    font-size: 1.75vw;
+}
+
+.pos-one::before {
+    font-family: Cabin;
+    text-align: left;
+    color: #D4E09B;
+    font-size: 1.75vw;
+    margin: 0;
+    font-style: italic;
+    content: "President ";
+}
+.pos-one {
+    font-family: Cabin;
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.75vw;
+    margin: 0;
+}
+
+.pos-two::before {
+    font-family: Cabin;
+    text-align: left;
+    color: #D4E09B;
+    font-size: 1.75vw;
+    margin: 0;
+    font-style: italic;
+    content: "Co-Chairperson ";
+}
+.pos-two {
+    font-family: Cabin;
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.75vw;
+    margin: 0;
+}
+
+.pos-three::before {
+    font-family: Cabin;
+    text-align: left;
+    color: #D4E09B;
+    font-size: 1.75vw;
+    margin: 0;
+    font-style: italic;
+    content: "VP Finance ";
+}
+.pos-three {
+    font-family: Cabin;
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.75vw;
+    margin: 0;
+}
+
+.pos-four::before {
+    font-family: Cabin;
+    text-align: left;
+    color: #D4E09B;
+    font-size: 1.75vw;
+    margin: 0;
+    font-style: italic;
+    content: "Director of Marketing ";
+}
+.pos-four {
+    font-family: Cabin;
+    text-align: left;
+    color: #ffffff;
+    font-size: 1.75vw;
+    margin: 0;
+}
+
+.hero-image {
+    align-self: right;
+    height: 40vw;
+    width: auto;
+    padding-left: 3vw;
 }

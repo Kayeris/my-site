@@ -1,0 +1,80 @@
+.hero-banner-mob {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.my-name-mob {
+    color: rgb(255, 255, 255);
+    font-family: Cabin;
+    margin: 0px;
+    font-size: 8vw;
+    align-self: center;
+}
+
+.sub-occ-mob {
+    font-family: Cabin;
+    text-align: center;
+    color: #F19C79;
+    font-style: italic;
+    font-size: 3.5vw;
+    margin: 0;
+}
+
+.edu-year {
+    font-family: Cabin;
+    text-align: center;
+    color: #89CFF0;
+    font-size: 3vw;
+}
+
+.hero-image-mob {
+    height: auto;
+    width: 45vw;
+}
+
+.positions {
+    font-family: Cabin;
+    text-align: right;
+    font-size: 3vw;
+    margin: 0;
+    font-style: italic;
+}
+.pink {
+    color: #F19C79;
+}
+.green {
+    color: #D4E09B;
+}
+.blue {
+    color: #89CFF0;
+}
+.grey {
+    color: #C4C4C4;
+}
+.white-words {
+    font-family: Cabin;
+    text-align: right;
+    color: #ffffff;
+    font-size: 3vw;
+    margin: 0;
+}
+
+.mobile-text {
+    vertical-align: middle;
+    text-align: justify;
+}
+
+.position-one {
+    padding-top: 1.5vh;
+}
+.position-two {
+    padding-top: 3vh;
+}
+.position-three {
+    padding-top: 5vh;
+}
+.position-four {
+    padding-top: 7vh;
+}

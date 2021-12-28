@@ -1,6 +1,6 @@
-.landing-body {
+.resume-body {
     background-image: url(./background.png);
-    background-size: cover;
+    background-size: 100%;
     padding-bottom: 1500px;
 }
 
