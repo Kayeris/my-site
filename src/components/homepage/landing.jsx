@@ -16,7 +16,7 @@ class Landing extends Component {
                 <p className="sub-occ-mob">
                   Programmer/Analyst, Writer, Photographer
                 </p>
-                <p className="edu-year">
+                <p className="edu-year-mob">
                   3rd year Honours @ University of Guelph
                 </p>
                 <div className="hero-banner-mob">
