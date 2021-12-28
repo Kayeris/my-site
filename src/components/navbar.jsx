@@ -8,7 +8,7 @@ function NavBar() {
       <div className="navbar">
         <div className="right-link-section">
           <Link to="/zworld" className="navbar-links">
-            Z-WORLD
+            Z WORLD
           </Link>
           <Link to="/blog" className="navbar-links">
             BLOG
@@ -20,15 +20,6 @@ function NavBar() {
             PROJECTS
           </Link>
         </div>
-        {/* <div className="left-link-section">
-          <Link to="/zworld" className="navbar-links">
-            Z-WORLD
-          </Link>
-          <Link to="/blog" className="navbar-links">
-            BLOG
-          </Link>
-        </div> */}
-
         <div className="logo-section">
           <Link to="/home" className="navbar-links">
             <img
