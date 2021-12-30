@@ -2,7 +2,7 @@
     background-image: url(./background.png);
     background-size: cover;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     max-height: fit-content;
     background-attachment: fixed;
     padding-block-start: 10vh;
@@ -109,3 +109,31 @@
     width: auto;
     padding-left: 3vw;
 }
+
+.button-socials {
+    padding-top: 3vh;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo-img {
+    padding-left: 5vw;
+    height: auto;
+    width: 3.5vw;
+}
+
+.align-the-button {
+    padding-left: 3vw;
+    vertical-align: middle;
+}
+
+.hire-btn {
+    padding-top: inherit;
+    vertical-align: middle;
+    background-color: #89CFF0;
+
+}
+
+
