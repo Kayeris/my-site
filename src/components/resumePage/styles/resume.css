@@ -1,14 +1,96 @@
 .resume-body {
     background-image: url(./background.png);
-    background-size: 100%;
-    padding-bottom: 1500px;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+    max-height: fit-content;
+    background-attachment: fixed;
+    padding-block-start: 10vh;
 }
 
-.remove-margin {
-    margin: 0px;
-    padding: 0px;
+.pink {
+    color: #F19C79;
+}
+.green {
+    color: #D4E09B;
+}
+.blue {
+    color: #89CFF0;
+}
+.grey {
+    color: #C4C4C4;
 }
 
-.per-page {
-    color: turquoise;
+.row-one {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    justify-content: center;
+}
+
+.row-two {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    justify-content: center;
+}
+
+.col-one {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile {
+    background-color: transparent;
+    border: 2px solid #D4E09B;
+    border-radius: 30px;
+    margin-right: 2.5vw;
+    width: 55vw;
+
+    box-shadow: -2px 2px 4px 2px rgba(212, 224, 155, 0.5);      /*this worksss*/
+
+    padding-bottom: 25vh;
+}
+
+.education {
+    background-color: #F19C79;
+    fill: #D4E09B;
+    border: 1px solid green ;
+    border-radius: 30px;
+    margin-left: 2.5vw;
+    width: 30vw;
+}
+
+.skills {
+    background-color: #D4E09B;
+    fill: #D4E09B;
+    padding-bottom: 25vh;
+    border: 3px solid green ;
+    border-radius: 30px;
+    margin-right: 2.5vw;
+    width: 42.5vw;
+}
+
+.projects {
+    background-color: #F19C79;
+    fill: #D4E09B;
+    border: 1px solid green ;
+    border-radius: 30px;
+    padding-bottom: 50vh;
+    margin-left: 2.5vw;
+    width: 42.5vw;
+}
+
+.extra {
+    background-color: #F19C79;
+    fill: #D4E09B;
+    border: 1px solid green ;
+    border-radius: 30px;
+    width: 42.5vw;
+    margin-top: 5vw;
 }
