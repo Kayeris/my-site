@@ -68,8 +68,7 @@
     margin-right: 2.5vw;
     width: 42.5vw;
     box-shadow: -2px 2px 4px 2px rgba(212, 224, 155, 0.5);      /*this worksss*/
-
-    padding-bottom: 40vh;
+    padding-bottom: 2vw;
 }
 
 .projects {
@@ -90,8 +89,7 @@
     width: 42.5vw;
     margin-top: 5vw;
     box-shadow: -2px 2px 4px 2px rgba(164, 74, 63, 0.5);      /*this worksss*/
-
-    padding-bottom: 25vh;
+    padding-bottom: 2vw;
 }
 
 .profile-content {
@@ -145,4 +143,40 @@
     border-radius: 15px;
     border: 1px solid white ;
     margin-left: 4vw;
+}
+
+.row-tech {
+    padding-right: 2vw;
+    padding-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* max-height: fit-content; */
+    /* width: inherit; */
+}
+
+.icon-sizes {
+    height: 6vw;
+    width: auto;
+    margin: 1vw;
+    
+}
+
+.club {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.position {
+    text-align: left;
+    color: white;
+    font-weight:bold;
+    font-size: 2vw;
+    margin-bottom: 0;
+    color: #F19C79;
+}
+.company {
+    padding-left: 2vw;
+    font-style: italic;
+    margin: 0;
 }
