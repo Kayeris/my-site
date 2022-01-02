@@ -1,0 +1,27 @@
+.tab-list {  
+	border-bottom: 3px solid rgba(241, 156, 121, 0.5);
+	padding-left: 0;
+	margin-bottom: 0;
+}
+  
+.tab-list-item {
+	display: inline-block;
+	list-style: none;
+	margin-bottom: -1px;
+	padding: 0.5rem 0.75rem;
+	font-family: Cabin;
+	color: white;
+}
+  
+.tab-list-active {
+	background-color: rgba(241, 156, 121, 0.5);
+	border: solid rgba(241, 156, 121, 0.5);
+	border-width: 1px 1px 0 1px;
+	
+}
+
+.tab-content {
+	background-color: rgba(241, 156, 121, 0.5);
+	margin-top: 0;
+	height: 50vh;
+}
