@@ -198,23 +198,58 @@ class Resume extends Component {
                         <p className="regular-text company">
                           Guelph Coding Community (GCC)
                         </p>
-                      </div>
-                      <div className="club">
-                        <p className="position">President</p>
-                        <p className="regular-text company">
-                          Guelph Coding Community (GCC)
+                        <p className="regular-text">
+                          Founded in 2013, GCC facilitates student-run
+                          workshops, tutorials, demos, networking sessions,
+                          social nights, and presentations for students of all
+                          backgrounds and skill-levels. GCC workshops are
+                          designed by passionate students and guest speakers to
+                          teach all manner of new skills. We focus on providing
+                          students with valuable, hands-on, extracurricular tech
+                          skills which cannot normally be acquired through
+                          coursework.
                         </p>
                       </div>
                       <div className="club">
-                        <p className="position">President</p>
-                        <p className="regular-text company">
-                          Guelph Coding Community (GCC)
+                        <p className="position">Co-Chairperson</p>
+                        <p className="regular-text company">GryphHacks</p>
+                        <p className="regular-text">
+                          University of Guelph's official annual hackathon. An
+                          organization run by students of Guelph Coding
+                          Community (GCC). Our aim is to inspire, mentor, and
+                          promote technological and social innovation through
+                          collaborative work over the course of 48 hours.
                         </p>
                       </div>
                       <div className="club">
-                        <p className="position">President</p>
+                        <p className="position">Director of Marketing</p>
                         <p className="regular-text company">
-                          Guelph Coding Community (GCC)
+                          C3 - Computing Councils of Canada
+                        </p>
+                        <p className="regular-text">
+                          The Computing Councils of Canada, also known as C^3
+                          (or CCubed), is a national organization of students
+                          aiming to create and foster an inclusive community for
+                          all students in computing-related fields across
+                          Canada. Our goal is to improve inter-school
+                          collaboration between computing student organizations,
+                          provide a support network, and connect students
+                          nationwide through our events.
+                        </p>
+                      </div>
+                      <div className="club">
+                        <p className="position">Vice President Finance</p>
+                        <p className="regular-text company">
+                          Society of Computing Information Science (SOCIS)
+                        </p>
+                        <p className="regular-text">
+                          The Official student society for the School of
+                          Computer Science students at the University of Guelph.
+                          SOCIS focuses on community building, creating
+                          opportunities for students, and advocating for
+                          students interests. We also run events, organize
+                          hackathons, administer clubs, and represent School of
+                          Computer Science students.
                         </p>
                       </div>
                     </div>
