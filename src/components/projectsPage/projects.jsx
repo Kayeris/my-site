@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Media from "react-media";
+
 import "./styles/projects.css";
 
 class Projects extends Component {
@@ -6,8 +8,15 @@ class Projects extends Component {
     return (
       <div className="projects-body">
         {/* This div will hold all elements of the page */}
-        <p className="remove-margin">hello</p>
-        <p className="per-page">THIS IS PROJECTSSS</p>
+        <Media query="(max-width: 950px)">
+          {(matches) =>
+            matches ? (
+              <div className="mobile-projects"></div>
+            ) : (
+              <div className="desktop-projects"></div>
+            )
+          }
+        </Media>
       </div>
     );
   }

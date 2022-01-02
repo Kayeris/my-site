@@ -1,7 +1,11 @@
 .projects-body {
     background-image: url(./background.png);
-    background-size: 100%;
-    padding-bottom: 1500px;
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+    max-height: fit-content;
+    background-attachment: fixed;
+    padding-block-start: 10vh;
 }
 
 .remove-margin {
