@@ -2,7 +2,7 @@
     background-image: url(./background.png);
     background-size: cover;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     max-height: fit-content;
     background-attachment: fixed;
     padding-block-start: 10vh;
@@ -20,16 +20,15 @@
 .all-text {
     vertical-align:middle;
     padding-right: 3vw;
+    
 }
 
 .my-name {
     color: rgb(255, 255, 255);
     font-family: Cabin;
     margin: 0px;
-    /* padding-left: 5%; */
-    /* padding-top: 5%;        change this to vertical align when the picture is in */
     font-size: 7vw;
-    align-self: left;
+    text-align: left;
 }
 
 .sub-occupation {
@@ -37,7 +36,7 @@
     text-align: left;
     color: #F19C79;
     font-style: italic;
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin: 0;
 }
 
@@ -49,11 +48,7 @@
 }
 
 .pos-one::before {
-    font-family: Cabin;
-    text-align: left;
     color: #D4E09B;
-    font-size: 1.75vw;
-    margin: 0;
     font-style: italic;
     content: "President ";
 }
@@ -63,14 +58,11 @@
     color: #ffffff;
     font-size: 1.75vw;
     margin: 0;
+    padding-bottom: 1.5vh;
 }
 
 .pos-two::before {
-    font-family: Cabin;
-    text-align: left;
     color: #D4E09B;
-    font-size: 1.75vw;
-    margin: 0;
     font-style: italic;
     content: "Co-Chairperson ";
 }
@@ -80,14 +72,11 @@
     color: #ffffff;
     font-size: 1.75vw;
     margin: 0;
+    padding-bottom: 1.5vh;
 }
 
 .pos-three::before {
-    font-family: Cabin;
-    text-align: left;
     color: #D4E09B;
-    font-size: 1.75vw;
-    margin: 0;
     font-style: italic;
     content: "VP Finance ";
 }
@@ -97,14 +86,11 @@
     color: #ffffff;
     font-size: 1.75vw;
     margin: 0;
+    padding-bottom: 1.5vh;
 }
 
 .pos-four::before {
-    font-family: Cabin;
-    text-align: left;
     color: #D4E09B;
-    font-size: 1.75vw;
-    margin: 0;
     font-style: italic;
     content: "Director of Marketing ";
 }
@@ -114,6 +100,7 @@
     color: #ffffff;
     font-size: 1.75vw;
     margin: 0;
+    padding-bottom: 1.5vh;
 }
 
 .hero-image {
@@ -122,3 +109,31 @@
     width: auto;
     padding-left: 3vw;
 }
+
+.button-socials {
+    padding-top: 3vh;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.logo-img {
+    padding-left: 5vw;
+    height: auto;
+    width: 3.5vw;
+}
+
+.align-the-button {
+    padding-left: 3vw;
+    vertical-align: middle;
+}
+
+.hire-btn {
+    padding-top: inherit;
+    vertical-align: middle;
+    background-color: #89CFF0;
+
+}
+
+

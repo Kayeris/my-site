@@ -22,7 +22,7 @@
     margin: 0;
 }
 
-.edu-year {
+.edu-year-mob {
     font-family: Cabin;
     text-align: center;
     color: #89CFF0;
@@ -78,3 +78,33 @@
 .position-four {
     padding-top: 7vh;
 }
+
+.button-socials-mob {
+    padding-top: 3vh;
+    /* padding-left: 3vw; */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.logo-mob {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: auto;
+    width: 7vw;
+}
+
+.align-the-button-mob {
+    vertical-align: middle;
+    align-content: center;
+}
+
+.hire-btn-mob {
+    padding-top: inherit;
+    vertical-align: middle;
+    background-color: #89CFF0;
+
+}
+

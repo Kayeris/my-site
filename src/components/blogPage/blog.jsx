@@ -6,8 +6,9 @@ class Blog extends Component {
     return (
       <div className="blog-body">
         {/* This div will hold all elements of the page */}
-        <p className="remove-margin">hello</p>
-        <p className="per-page">THIS IS blogg</p>
+        <div className="coming-soon-blog-div">
+          <p className="blog-soon">COMING SOON</p>
+        </div>
       </div>
     );
   }
