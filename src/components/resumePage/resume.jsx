@@ -6,6 +6,8 @@ import "./styles/resume-mobile.css";
 import "./styles/resume.css";
 import profilepic from "./styles/picture.jpg";
 import unipic from "./styles/guelphlogo.png";
+import lowkations from "./styles/lowkation.png";
+
 import htmllogo from "./styles/icons/html.png";
 import javalogo from "./styles/icons/java.png";
 import clogo from "./styles/icons/c.png";
@@ -20,7 +22,6 @@ import androidstudiologo from "./styles/icons/android-studio.png";
 import debianlogo from "./styles/icons/debian.png";
 import intellijlogo from "./styles/icons/intellij.png";
 import vscodelogo from "./styles/icons/vscode.png";
-import windowlogo from "./styles/icons/windows.png";
 
 class Resume extends Component {
   render() {
@@ -83,7 +84,7 @@ class Resume extends Component {
                     <div className="skills">
                       <p className="heading">TECHNOLOGIES and FRAMEWORKS</p>
                       <div className="all-icons">
-                        <ReactTooltip id="LogoTip" />
+                        <ReactTooltip id="LogoTip" place="top" effect="solid" />
                         <div className="row-tech">
                           <img
                             className="icon-sizes"
@@ -182,9 +183,9 @@ class Resume extends Component {
                           />
                           <img
                             className="icon-sizes"
-                            src={windowlogo}
-                            alt="Windows"
-                            data-tip="Windows OS"
+                            src={vscodelogo}
+                            alt="VS Code"
+                            data-tip="Visual Studio Code"
                             data-for="LogoTip"
                           />
                         </div>
@@ -255,7 +256,113 @@ class Resume extends Component {
                   </div>
                   <div className="projects">
                     <p className="heading">PROJECTS</p>
-                    <div className="project-one"></div>
+                    <div>
+                      <p className="subheading">Project Lowkation</p>
+                      <div className="basic-info">
+                        <div>
+                          <p className="proj-detail">Hackathon: MapHacks</p>
+                          <p className="proj-detail">Team Project</p>
+                          <p className="proj-detail">
+                            Web Designer & Frontend Developer
+                          </p>
+                          <p className="proj-detail">Dec 2021</p>
+                        </div>
+                        <div>
+                          <img
+                            className="project-pic"
+                            src={lowkations}
+                            alt="Lowkations Banner"
+                          />
+                        </div>
+                      </div>
+                      <p className="regular-text">
+                        LowKation, short for Lowkey Locations, is a progressive
+                        web application where users can sign up and contribute
+                        to an ever-growing collection of hidden locations in the
+                        world, and view others’ postings as well.
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p className="subheading">Project Lowkation</p>
+                      <div className="basic-info">
+                        <div>
+                          <p className="proj-detail">Hackathon: MapHacks</p>
+                          <p className="proj-detail">Team Project</p>
+                          <p className="proj-detail">
+                            Web Designer & Frontend Developer
+                          </p>
+                          <p className="proj-detail">Dec 2021</p>
+                        </div>
+                        <div>
+                          <img
+                            className="project-pic"
+                            src={lowkations}
+                            alt="Lowkations Banner"
+                          />
+                        </div>
+                      </div>
+                      <p className="regular-text">
+                        LowKation, short for Lowkey Locations, is a progressive
+                        web application where users can sign up and contribute
+                        to an ever-growing collection of hidden locations in the
+                        world, and view others’ postings as well.
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p className="subheading">Project Lowkation</p>
+                      <div className="basic-info">
+                        <div>
+                          <p className="proj-detail">Hackathon: MapHacks</p>
+                          <p className="proj-detail">Team Project</p>
+                          <p className="proj-detail">
+                            Web Designer & Frontend Developer
+                          </p>
+                          <p className="proj-detail">Dec 2021</p>
+                        </div>
+                        <div>
+                          <img
+                            className="project-pic"
+                            src={lowkations}
+                            alt="Lowkations Banner"
+                          />
+                        </div>
+                      </div>
+                      <p className="regular-text">
+                        LowKation, short for Lowkey Locations, is a progressive
+                        web application where users can sign up and contribute
+                        to an ever-growing collection of hidden locations in the
+                        world, and view others’ postings as well.
+                      </p>
+                    </div>
+                    <hr />
+                    <div>
+                      <p className="subheading">Project Lowkation</p>
+                      <div className="basic-info">
+                        <div>
+                          <p className="proj-detail">Hackathon: MapHacks</p>
+                          <p className="proj-detail">Team Project</p>
+                          <p className="proj-detail">
+                            Web Designer & Frontend Developer
+                          </p>
+                          <p className="proj-detail">Dec 2021</p>
+                        </div>
+                        <div>
+                          <img
+                            className="project-pic"
+                            src={lowkations}
+                            alt="Lowkations Banner"
+                          />
+                        </div>
+                      </div>
+                      <p className="regular-text">
+                        LowKation, short for Lowkey Locations, is a progressive
+                        web application where users can sign up and contribute
+                        to an ever-growing collection of hidden locations in the
+                        world, and view others’ postings as well.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
