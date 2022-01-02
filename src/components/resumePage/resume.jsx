@@ -31,10 +31,9 @@ class Resume extends Component {
           {(matches) =>
             matches ? (
               <div className="mobile-mode">
-                <p>
-                  this is a placeholder so the code stays formatted otherwise
-                  ima lost my brain
-                </p>
+                <div className="coming-soon-blog-div">
+                  <p className="blog-soon">COMING SOON</p>
+                </div>
               </div>
             ) : (
               <div className="desktop-mode">
@@ -256,6 +255,7 @@ class Resume extends Component {
                   </div>
                   <div className="projects">
                     <p className="heading">PROJECTS</p>
+                    <div className="project-one"></div>
                   </div>
                 </div>
               </div>

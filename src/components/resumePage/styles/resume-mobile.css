@@ -1,0 +1,13 @@
+.coming-soon-blog-div {
+    height: 90vh;
+    vertical-align: middle;
+}
+
+.blog-soon {
+    color: white;
+    font-family: Quiche;
+    vertical-align: middle;
+    font-size: 10vw;
+    margin: 0;
+    padding-top: 30vh;
+}
