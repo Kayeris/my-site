@@ -24,4 +24,5 @@
 	background-color: rgba(241, 156, 121, 0.5);
 	margin-top: 0;
 	height: 50vh;
+	/* @if $label */
 }
