@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Nav, NavDropdown } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
 import "./styles/navbar.css";
 
@@ -7,27 +8,33 @@ function NavBar() {
     <nav>
       <div className="navbar">
         <div className="right-link-section">
-          <Link to="/zworld" className="navbar-links">
+          <Nav.Link href="/zworld" className="navbar-links">
             Z WORLD
-          </Link>
-          <Link to="/blog" className="navbar-links">
+          </Nav.Link>
+          {/* <NavDropdown title="Z WORLD" href="/zworld" className="navbar-links">
+            <NavDropdown.Item className="navbar-links">Action</NavDropdown.Item>
+            <NavDropdown.Item className="navbar-links">
+              Separated link
+            </NavDropdown.Item>
+          </NavDropdown> */}
+          <Nav.Link href="/blog" className="navbar-links">
             BLOG
-          </Link>
-          <Link to="/resume" className="navbar-links">
+          </Nav.Link>
+          <Nav.Link href="/resume" className="navbar-links">
             RESUME
-          </Link>
-          <Link to="/projects" className="navbar-links">
+          </Nav.Link>
+          <Nav.Link href="/projects" className="navbar-links">
             PROJECTS
-          </Link>
+          </Nav.Link>
         </div>
         <div className="logo-section">
-          <Link to="/home" className="navbar-links">
+          <Nav.Link href="/home" className="navbar-links">
             <img
               className="logo"
               src=" https://drive.google.com/thumbnail?id=1euumg_1ICISd3mKBNc0TWGHFZmuEisVA"
               alt="LOGO"
             />
-          </Link>
+          </Nav.Link>
         </div>
       </div>
     </nav>
