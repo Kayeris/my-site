@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import logo from "./styles/hero-img3.png";
 import Media from "react-media";
+import Button from "react-bootstrap/Button";
 import { Link, NavLink } from "react-router-dom";
 
-import "./styles/landing.css";
+import "./styles/landing-desktop.css";
 import "./styles/landing-mobile.css";
 
 class Landing extends Component {
@@ -13,9 +14,28 @@ class Landing extends Component {
         "mailto:soloyyz2000@yahoo.com?subject=Subject&body=Body%20goes%20here"
       );
     }
+    function Instagram() {
+      // <a href="https://www.w3schools.com" target="_blank" />;
+      window.open("https://instagram.com/zazuzala?igshid=YmMyMTA2M2Y=");
+    }
+    function Twitter() {
+      // <a href="https://www.w3schools.com" target="_blank" />;
+      window.open(
+        "https://twitter.com/zazulezaza?t=3IqZ9sFS5WoC4YdsIdntVw&s=09"
+      );
+    }
+    function Linkedin() {
+      // <a href="https://www.w3schools.com" target="_blank" />;
+      window.open("https://ca.linkedin.com/in/shaiza-hashmi");
+    }
+    function Github() {
+      // <a href="https://www.w3schools.com" target="_blank" />;
+      window.open("https://github.com/Kayeris");
+    }
 
     return (
       <div className="landing-body">
+        {/* overall screen container */}
         <Media query="(max-width: 950px)">
           {(matches) =>
             matches ? (
@@ -91,47 +111,53 @@ class Landing extends Component {
               </div>
             ) : (
               <div>
-                <div className="hero-banner">
-                  <div className="all-text">
-                    <p className="my-name">Hi, I'm Shaiza!</p>
-                    <p className="sub-occupation">
-                      Programmer/Analyst, Writer, Photographer
-                    </p>
-                    <p className="edu-year">
-                      3rd year Honours @ University of Guelph
-                    </p>
-                    <p className="pos-one"> of Guelph Coding Community</p>
-                    <p className="pos-two"> of GryphHacks</p>
-                    <p className="pos-three">of SOCIS</p>
-                    <p className="pos-four">
-                      of C3 - Canadian Computing Councils
-                    </p>
+                <div className="landing-desktop-format">
+                  <div className="landing-left-column">
+                    <div>
+                      <p className="my-name">Hi, I'm Shaiza!</p>
+                      <div classname="landing-subtitles">
+                        <p className="sub-occupation">
+                          Software Developer, Writer, Photographer
+                        </p>
+                        <p className="edu-year">
+                          3rd year Honours @ University of Guelph
+                        </p>
+                      </div>
+                    </div>
                     <div className="button-socials">
                       <div className="align-the-button">
-                        <button className="hire-btn" onClick={HireMe}>
-                          Default
-                        </button>
+                        <Button
+                          classname="btn btn-lg"
+                          variant="primary"
+                          onClick={HireMe}
+                        >
+                          CONTACT ME!
+                        </Button>{" "}
                         ;
                       </div>
                       <img
-                        className="logo-img"
+                        className="socials-logos"
                         src=" https://drive.google.com/thumbnail?id=19PhiHOa5cgpze8Zmm32hhwSS2YEVilQq"
                         alt="Instagram"
+                        onClick={Instagram}
                       />
                       <img
-                        className="logo-img"
+                        className="socials-logos"
                         src=" https://drive.google.com/thumbnail?id=1WpUXqCXeFupRsD87387x0z0AyUz91Tpa"
                         alt="Twitter"
+                        onClick={Twitter}
                       />
                       <img
-                        className="logo-img"
+                        className="socials-logos"
                         src=" https://drive.google.com/thumbnail?id=1Nypol6A3s2FH03M3pcCR2Wdi4RkihHZb"
                         alt="LinkedIN"
+                        onClick={Linkedin}
                       />
                       <img
-                        className="logo-img"
+                        className="socials-logos"
                         src=" https://drive.google.com/thumbnail?id=1ak9tJRvzXBbFusse1RQcKxoMYf50_iE9"
                         alt="Github"
+                        onClick={Github}
                       />
                     </div>
                   </div>

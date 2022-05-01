@@ -1,0 +1,98 @@
+.landing-body {
+    background-image: url(./background.png);
+    background-size: cover;
+    width: 100%;
+    min-height: 90vh;
+    max-height: fit-content;
+    background-attachment: fixed;
+    padding-block-start: 10vh;
+}
+
+.landing-desktop-format {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5vh;
+}
+.landing-left-column {
+    padding-right: 10vw;
+}
+.my-name {
+    color: var(--white);
+    font-family: Cabin;
+    margin-top: 5vh;
+    margin-bottom: 0;
+    font-size: 7vw;
+    text-align: left;
+}
+.landing-subtitles {
+    padding-left: 1vw;
+}
+.sub-occupation {
+    font-family: Cabin;
+    text-align: left;
+    color: var(--palepink);
+    font-style: italic;
+    font-size: 2vw;
+    margin-top: 0;
+    margin-left: 1.5vw;
+}
+.edu-year {
+    font-family: Cabin;
+    text-align: left;
+    color: var(--paleblue);
+    font-size: 1.75vw;
+    margin-top: 0;
+    margin-left: 1.5vw;
+}
+
+.button-socials {
+    padding-top: 18vh;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.socials-logos {
+    padding-left: 5vw;
+    height: 2.5vw;
+    width: 2.5vw;
+}
+.align-the-button {
+    vertical-align: middle;
+    align-self: center;
+}
+
+.btn {
+    vertical-align: middle;
+    background-color: var(--palegreen);
+    color: var(--white);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    border-radius: 10px;
+    /* border-style: inset; */
+    border-color:var(--darkgreen);
+    font-size: x-large;
+    
+}
+.btn:hover {
+    background-color: var(--palepink);
+    transition: background-color 0.3s ease-in-out;
+    border-color:var(--redbrown);
+    transition: border-color 0.3s ease-in-out;
+    /* color: var(--black);
+    transition: color 0.3s ease-in-out;
+    font-size: x-large; */
+}
+
+
+
+.hero-image {
+    align-self: right;
+    height: 40vw;
+    width: auto;
+    padding-left: 3vw;
+}

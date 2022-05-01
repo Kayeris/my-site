@@ -1,3 +1,17 @@
+:root {
+  --palegreen: #9BBFB6;
+  --darkgreen:rgb(80, 105, 99);
+  --palepink: #F19C79;
+  --redbrown: #A44A3F;
+  --paleblue: #89CFF0;
+  --paleyellow: #F6F4D2;
+  --paleblack: #161515;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+
+
 .App {
   text-align: center;
   background-color: var(--main-bg-color);
