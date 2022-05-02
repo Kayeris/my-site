@@ -1,110 +1,78 @@
-.hero-banner-mob {
-    position: sticky;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.hero-image-mob {
+    height: auto;
+    width: 80vw;
+    padding-left: 3vw;
 }
-
+.hero-parent {
+    position: relative;
+}
+.mobile-text {
+    position: absolute;
+    top: 70%;
+    align-content: left;
+    padding-left: 10vw;
+    padding-left: 10vw;
+}
 .my-name-mob {
-    color: rgb(255, 255, 255);
+    color: var(--white);
     font-family: Cabin;
     margin: 0px;
-    font-size: 8vw;
-    align-self: center;
+    padding: 0px;
+    font-size: 9vh;
+    text-align: left;
 }
 
 .sub-occ-mob {
     font-family: Cabin;
-    text-align: center;
+    text-align: left;
     color: #F19C79;
     font-style: italic;
-    font-size: 3.5vw;
+    font-size: 4vw;
     margin: 0;
 }
 
 .edu-year-mob {
     font-family: Cabin;
-    text-align: center;
+    text-align: left;
     color: #89CFF0;
-    font-size: 3vw;
+    font-size: 4vw;
+    padding-top: 4vh;
 }
 
-.hero-image-mob {
-    height: auto;
-    width: 45vw;
-}
-
-.positions {
-    font-family: Cabin;
-    text-align: right;
-    font-size: 3vw;
-    margin: 0;
-    font-style: italic;
-}
-.pink {
-    color: #F19C79;
-}
-.green {
-    color: #D4E09B;
-}
-.blue {
-    color: #89CFF0;
-}
-.grey {
-    color: #C4C4C4;
-}
-.white-words {
-    font-family: Cabin;
-    text-align: right;
-    color: #ffffff;
-    font-size: 3vw;
-    margin: 0;
-}
-
-.mobile-text {
+.socials-logos-mob {
+    padding-left: 6vw;
+    height: 4vh;
+    width: auto;
     vertical-align: middle;
-    text-align: justify;
-}
-
-.position-one {
-    padding-top: 1.5vh;
-}
-.position-two {
-    padding-top: 3vh;
-}
-.position-three {
-    padding-top: 5vh;
-}
-.position-four {
-    padding-top: 7vh;
-}
-
-.button-socials-mob {
-    padding-top: 3vh;
-    /* padding-left: 3vw; */
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-
-}
-
-.logo-mob {
-    padding-left: 5vw;
-    padding-right: 5vw;
-    height: auto;
-    width: 7vw;
 }
 
 .align-the-button-mob {
+    display: flex;
+    flex-direction: row;
     vertical-align: middle;
-    align-content: center;
+    align-content: flex-start;
 }
-
 .hire-btn-mob {
-    padding-top: inherit;
     vertical-align: middle;
-    background-color: #89CFF0;
-
+    background-color: var(--palegreen);
+    color: var(--white);
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 10px;
+    border-style: inset;
+    border-color:var(--darkgreen);
+    font-size: medium;
+    align-self: flex-start;
+    
 }
-
+.hire-btn-mob:hover {
+    background-color: var(--palepink);
+    transition: background-color 0.3s ease-in-out;
+    border-color:var(--redbrown);
+    transition: border-color 0.3s ease-in-out;
+    /* color: var(--black);
+    transition: color 0.3s ease-in-out;
+    font-size: x-large; */
+}
