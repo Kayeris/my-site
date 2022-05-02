@@ -6,6 +6,7 @@
     max-height: fit-content;
     background-attachment: fixed;
     padding-block-start: 10vh;
+    /* background-color: var(--paleblack); */
 }
 
 .landing-desktop-format {
@@ -13,7 +14,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
 }
 .landing-left-column {
     padding-right: 10vw;
@@ -56,15 +57,16 @@
 }
 .socials-logos {
     padding-left: 5vw;
-    height: 2.5vw;
-    width: 2.5vw;
+    height: 5vh;
+    width: auto;
 }
+
+
 .align-the-button {
     vertical-align: middle;
     align-self: center;
 }
-
-.btn {
+.hire-btn {
     vertical-align: middle;
     background-color: var(--palegreen);
     color: var(--white);
@@ -73,12 +75,12 @@
     padding-left: 2vw;
     padding-right: 2vw;
     border-radius: 10px;
-    /* border-style: inset; */
+    border-style: inset;
     border-color:var(--darkgreen);
     font-size: x-large;
     
 }
-.btn:hover {
+.hire-btn:hover {
     background-color: var(--palepink);
     transition: background-color 0.3s ease-in-out;
     border-color:var(--redbrown);

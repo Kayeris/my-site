@@ -7,6 +7,11 @@ import { Link, NavLink } from "react-router-dom";
 import "./styles/landing-desktop.css";
 import "./styles/landing-mobile.css";
 
+import Insta from "../../assets/insta.png";
+import Linked from "../../assets/linkedin.png";
+import Twitt from "../../assets/twitter.png";
+import Git from "../../assets/github.png";
+
 class Landing extends Component {
   render() {
     function HireMe() {
@@ -126,21 +131,17 @@ class Landing extends Component {
                     </div>
                     <div className="button-socials">
                       <div className="align-the-button">
-                        <Button
-                          classname="btn btn-lg"
-                          variant="primary"
-                          onClick={HireMe}
-                        >
-                          CONTACT ME!
-                        </Button>{" "}
-                        ;
+                        <button className="hire-btn" onClick={HireMe}>
+                          CONTACT ME
+                        </button>{" "}
                       </div>
                       <img
                         className="socials-logos"
-                        src=" https://drive.google.com/thumbnail?id=19PhiHOa5cgpze8Zmm32hhwSS2YEVilQq"
+                        src={Insta}
                         alt="Instagram"
                         onClick={Instagram}
                       />
+
                       <img
                         className="socials-logos"
                         src=" https://drive.google.com/thumbnail?id=1WpUXqCXeFupRsD87387x0z0AyUz91Tpa"

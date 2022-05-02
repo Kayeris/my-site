@@ -10,12 +10,13 @@ function NavBar() {
     <Navbar collapseOnSelect expand="lg" className="navbar navbar-dark">
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto left-link-section">
-            <Nav.Link href="/zworld" className="nav-link">
+            <Nav.Link href="/zworld" className="navbar-links left-push-link ">
               Z WORLD
             </Nav.Link>
-            <Nav.Link href="/blog" className="navbar-links">
+            <Nav.Link href="/blog" className="navbar-links right-push-link">
               BLOG
             </Nav.Link>
           </Nav>
@@ -24,13 +25,17 @@ function NavBar() {
         <Navbar.Brand href="/home">
           <img src={Logo} alt="Brand Logo" className="navbar-logo" />
         </Navbar.Brand>
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto left-link-section">
-            <Nav.Link href="/zworld" className="nav-link">
-              Z WORLD
+            <Nav.Link
+              href="/resume"
+              className="navbar-links left-push-link right-push-link"
+            >
+              RESUME
             </Nav.Link>
-            <Nav.Link href="/blog" className="navbar-links">
-              BLOG
+            <Nav.Link href="/projects" className="navbar-links">
+              PROJECTS
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
