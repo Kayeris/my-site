@@ -10,6 +10,12 @@
     display: flex;
     flex-direction: column;
 }
+.no-bottom-margin {
+    margin-bottom: 0;
+}
+.italicize {
+    font-style: italic;
+}
 
 /* BANNER AREA */
 .mobile-banner {
@@ -64,9 +70,89 @@
     color: var(--paleblue);
     font-family: Cabin;
     font-size: 2.75vh;
-    text-align: left;
+    text-align: left; 
+}
+.bg-card-colour {
     background-color: rgba(61, 75, 71, 0.10);
-    border-bottom: 2px solid var(--redbrown) ;
+    border-top: 2px solid var(--redbrown) ;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+
+
+/* EDUCATION */
+.education-card {
+    color: var(--white);
+    font-family: Cabin;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.mobile-inst-year {
+    
+    font-size: 4vw;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+.educard-year {
+    font-style: italic;
+    text-align: right;
+    margin-left: auto;
+}
+.education-details {
+    font-size: 4vw;
+}
+
+/* TOOLS AND TECHNOLOGIES */
+.tools-n-tech {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+.mobile-tools-icons {
+    height: 10vw;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* PROJECTS */
+.project-card {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: var(--white);
+    font-size: 4vw;
+    /* padding-bottom: 0.5vh; */
+}
+.mobile-proj-title {
+    color: var(--palepink);
+}
+.mobile-proj-subtitle {
+    margin-left: 1vw;
+}
+.mobile-proj-details {
+    margin-left: 1vw;
+    font-size: 1.75vh;
+}
+
+/* PRO EXP */
+.pro-exp-card {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: var(--white);
+    font-size: 4vw;
+    /* padding-bottom: 0.5vh; */
+}
+.mobile-proexp-title {
+    color: var(--palepink);
+}
+.mobile-proexp-subtitle {
+    margin-left: 1vw;
+}
+.mobile-proexp-details {
+    margin-left: 1vw;
+    font-size: 1.75vh;
 }
 
 /* CONTACT ME */
