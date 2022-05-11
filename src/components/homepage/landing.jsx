@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-import logo from "./styles/hero-img3.png";
+import heroimage from "../../assets/hero-img3.png";
 import Media from "react-media";
-import Button from "react-bootstrap/Button";
-import { Link, NavLink } from "react-router-dom";
 
 import "./styles/landing-desktop.css";
 import "./styles/landing-mobile.css";
@@ -141,7 +139,11 @@ class Landing extends Component {
                       />
                     </div>
                   </div>
-                  <img className="hero-image" src={logo} alt="hero image" />
+                  <img
+                    className="hero-image"
+                    src={heroimage}
+                    alt="hero image"
+                  />
                 </div>
               </div>
             )

@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: row;
     vertical-align: middle;
-    align-content: flex-start;
+    /* align-content: flex-start; */
 }
 .hire-btn-mob {
     vertical-align: middle;

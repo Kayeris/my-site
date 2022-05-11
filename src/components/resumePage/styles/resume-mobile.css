@@ -1,13 +1,90 @@
-.coming-soon-blog-div {
-    height: 90vh;
-    vertical-align: middle;
+/* GENERAL PAGE FORMATTING */
+.resume-mobile-margins {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    /* border: 2px solid var(--palepink) ; */
+}
+.column-flex {
+    display: flex;
+    flex-direction: column;
 }
 
-.blog-soon {
-    color: white;
-    font-family: Quiche;
+/* BANNER AREA */
+.mobile-banner {
+    /* justify-content: center; */
+    font-family: Cabin;
+    font-size: 4vh;
+    color: var(--white);
+    align-items: center;
+}
+.name-and-job {
     vertical-align: middle;
-    font-size: 10vw;
+    text-align: left;
+    /* justify-content: space-between;
+    margin-bottom: auto; */
+    align-items: center;
+}
+.mobile-profile-icon {
+    width: auto;
+    height: 15vh;
+    /* margin-right: 2vw; */
+
+}
+.mobile-name-banner {
     margin: 0;
-    padding-top: 30vh;
+}
+.mobile-job-banner {
+    margin: 0;
+    font-style: italic;
+    font-size: 7vw;
+    color: var(--palepink);
+}
+.mobile-banner-text {
+    color: var(--white);
+    font-family: Cabin;
+    font-size: 1.75vh;
+    text-align: left;
+    margin-top: 2vh;
+}
+
+/* COLLAPSIBLE DIVS */
+
+.collapsible-label-closed {
+    margin-top: 2vh;
+    color: var(--palegreen);
+    font-family: Cabin;
+    font-size: 2.75vh;
+    text-align: left;
+    border-bottom: 2px solid #3F4541 ;
+}
+.collapsible-label-open {
+    margin-top: 2vh;
+    color: var(--paleblue);
+    font-family: Cabin;
+    font-size: 2.75vh;
+    text-align: left;
+    background-color: rgba(61, 75, 71, 0.10);
+    border-bottom: 2px solid var(--redbrown) ;
+}
+
+/* CONTACT ME */
+.mobile-contact {
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: row;
+    font-size: 2vh;
+    color: var(--white);
+    margin-bottom: 1vh;
+    font-style: normal;
+}
+.mobile-contact-icon {
+    height: auto;
+    width: 3vh;
+    margin-right: 2vw;
+}
+.mobile-contact-text {
+    margin: 0;
+    vertical-align: middle;
 }

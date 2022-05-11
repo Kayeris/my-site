@@ -1,7 +1,7 @@
 import React from "react";
-import { Container, Nav, NavDropdown } from "react-bootstrap";
+import { Container, Nav } from "react-bootstrap";
 import Navbar from "react-bootstrap/Navbar";
-import { Link, NavLink } from "react-router-dom";
+// import { Link, NavLink } from "react-router-dom";
 import "./styles/navbar.css";
 import Logo from "../assets/logofile.png";
 

@@ -1,30 +1,52 @@
 import React, { Component } from "react";
 import Media from "react-media";
 import ReactTooltip from "react-tooltip";
+import Collapsible from "react-collapsible";
 
 import "./styles/resume-mobile.css";
-import "./styles/resume.css";
-import profilepic from "./styles/picture.jpg";
-import unipic from "./styles/guelphlogo.png";
-import lowkations from "./styles/lowkation.png";
+import "./styles/resume-desktop.css";
 
-import htmllogo from "./styles/icons/html.png";
-import javalogo from "./styles/icons/java.png";
-import clogo from "./styles/icons/c.png";
-import pythonlogo from "./styles/icons/python.png";
-import csslogo from "./styles/icons/css.png";
-import reactlogo from "./styles/icons/react.png";
-import flutterlogo from "./styles/icons/flutter.png";
-import nodelogo from "./styles/icons/nodejs.png";
-import androidlogo from "./styles/icons/android.png";
-import gitlogo from "./styles/icons/git logo.png";
-import androidstudiologo from "./styles/icons/android-studio.png";
-import debianlogo from "./styles/icons/debian.png";
-import intellijlogo from "./styles/icons/intellij.png";
-import vscodelogo from "./styles/icons/vscode.png";
+// contact info imports
+import greenLinkedin from "../../assets/green-linkedin.svg";
+import greenphone from "../../assets/green-phone.svg";
+import greenemail from "../../assets/green-mail.svg";
+import greenfigma from "../../assets/green-figma.svg";
+import greengit from "../../assets/greengithub.svg";
+import greendev from "../../assets/greendev.svg";
+
+import profileicon from "../../assets/profile-icon.png";
+import wrenchicon from "../../assets/wrench.svg";
+import laptopicon from "../../assets/laptop-code.svg";
+import toolboxicon from "../../assets/toolbox.svg";
+import gradicon from "../../assets/grad-cap.svg";
+
+// all imported logos for skillsets
+import reactlogo from "../../assets/icons/react.png";
+import htmllogo from "../../assets/icons/html.png";
+import csslogo from "../../assets/icons/css.png";
+import javascripylogo from "../../assets/icons/javascript.png";
+import nodelogo from "../../assets/icons/nodejs.png";
+
+import androidlogo from "../../assets/icons/android.png";
+import flutterlogo from "../../assets/icons/flutter.png";
+import autodesklogo from "../../assets/icons/autodesk-suite.png";
+import webgllogo from "../../assets/icons/webgl.png";
+
+import figmalogo from "../../assets/icons/Figma-logo.svg";
+import javalogo from "../../assets/icons/java.png";
+import clogo from "../../assets/icons/c.png";
+import pythonlogo from "../../assets/icons/python.png";
+import gitlogo from "../../assets/icons/git logo.png";
+
+import androidstudiologo from "../../assets/icons/android-studio.png";
+import vscodelogo from "../../assets/icons/vscode.png";
+import debianlogo from "../../assets/icons/debian.png";
+import intellijlogo from "../../assets/icons/intellij.png";
+import bashlogo from "../../assets/icons/bash.png";
 
 class Resume extends Component {
   render() {
+    // const [open, setOpen] = useState(false);
     return (
       <div className="resume-body">
         {/* conditional for either mobile or desktop mode*/}
@@ -32,65 +54,371 @@ class Resume extends Component {
           {(matches) =>
             matches ? (
               <div className="mobile-mode">
-                <div className="coming-soon-blog-div">
-                  <p className="blog-soon">COMING SOON</p>
+                <div className="resume-mobile-margins">
+                  <div className="mobile-banner row-flex">
+                    <img
+                      src={profileicon}
+                      alt="Profile icon - Girl with Wavy Hair"
+                      className="mobile-profile-icon"
+                    />
+                    <div className="name-and-job">
+                      <p className="mobile-name-banner">Shaiza Hashmi,</p>
+                      <p className="mobile-job-banner">Software Developer</p>
+                    </div>
+                  </div>
+                  <div className="mobile-banner-text">
+                    <p>
+                      Currently a 4th year Honours Student at the University of
+                      Guelph. Recognized for having a strong desire to work with
+                      future technological leaders in the industry for both
+                      professional and personal growth. A quick learner, ready
+                      to overcome any challenges that come her way.
+                    </p>
+                    <p>
+                      I'm a university student who's been involved with
+                      technology, and more specifically, coding, for over 8
+                      years. I currently specialize in design and front-end
+                      development of websites, apps etc! I like to spend my time
+                      making things, either in creative aspects (stories, poems,
+                      photography) or learning new tips & tricks in the coding
+                      world!
+                    </p>
+                  </div>
+
+                  <div>
+                    <Collapsible
+                      trigger="✆ CONTACT ME ►"
+                      triggerWhenOpen="✆ CONTACT ME ▼"
+                      className="collapsible-label-closed"
+                      openedClassName="collapsible-label-open"
+                    >
+                      <div className="column-flex">
+                        <div className="mobile-contact">
+                          <img
+                            src={greenphone}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">416-912-8654</p>
+                        </div>
+                        <div className="mobile-contact">
+                          <img
+                            src={greenLinkedin}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">
+                            in/shaiza-hashmi
+                          </p>
+                        </div>
+                        <div className="mobile-contact">
+                          <img
+                            src={greenemail}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">
+                            soloyyz2000@yahoo.com
+                          </p>
+                        </div>
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger="🖋 EDUCATION"
+                      className="collapsible-label-closed"
+                      openedClassName="collapsible-label-open"
+                    >
+                      <div className="column-flex">
+                        <div className="mobile-contact">
+                          <img
+                            src={greenphone}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">416-912-8654</p>
+                        </div>
+                        <div className="mobile-contact">
+                          <img
+                            src={greenLinkedin}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">
+                            in/shaiza-hashmi
+                          </p>
+                        </div>
+                        <div className="mobile-contact">
+                          <img
+                            src={greenemail}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">
+                            soloyyz2000@yahoo.com
+                          </p>
+                        </div>
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger="🛠 TOOLS & TECHNOLOGIES"
+                      className="collapsible-label-closed"
+                      openedClassName="collapsible-label-open"
+                    >
+                      <div className="column-flex">
+                        <div className="mobile-contact">
+                          <img
+                            src={greenphone}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">416-912-8654</p>
+                        </div>
+                        <div className="mobile-contact">
+                          <img
+                            src={greenLinkedin}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">
+                            in/shaiza-hashmi
+                          </p>
+                        </div>
+                        <div className="mobile-contact">
+                          <img
+                            src={greenemail}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">
+                            soloyyz2000@yahoo.com
+                          </p>
+                        </div>
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger="♠ PROJECTS "
+                      className="collapsible-label-closed"
+                      openedClassName="collapsible-label-open"
+                    >
+                      <div className="column-flex">
+                        <div className="mobile-contact">
+                          <img
+                            src={greenphone}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">416-912-8654</p>
+                        </div>
+                        <div className="mobile-contact">
+                          <img
+                            src={greenLinkedin}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">
+                            in/shaiza-hashmi
+                          </p>
+                        </div>
+                        <div className="mobile-contact">
+                          <img
+                            src={greenemail}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">
+                            soloyyz2000@yahoo.com
+                          </p>
+                        </div>
+                      </div>
+                    </Collapsible>
+                    <Collapsible
+                      trigger="☆ PROFESSIONAL EXPERIENCE "
+                      className="collapsible-label-closed"
+                      openedClassName="collapsible-label-open"
+                    >
+                      <div className="column-flex">
+                        <div className="mobile-contact">
+                          <img
+                            src={greenphone}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">416-912-8654</p>
+                        </div>
+                        <div className="mobile-contact">
+                          <img
+                            src={greenLinkedin}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">
+                            in/shaiza-hashmi
+                          </p>
+                        </div>
+                        <div className="mobile-contact">
+                          <img
+                            src={greenemail}
+                            alt="Phone Icon"
+                            className="mobile-contact-icon"
+                          />
+                          <p className="mobile-contact-text">
+                            soloyyz2000@yahoo.com
+                          </p>
+                        </div>
+                      </div>
+                    </Collapsible>
+                  </div>
                 </div>
               </div>
             ) : (
               <div className="desktop-mode">
-                <div className="row-one">
-                  <div className="profile">
-                    <p className="heading">PROFILE</p>
-                    <div className="profile-content">
-                      <img
-                        className="profile-picture"
-                        src={profilepic}
-                        alt="Profile Picture"
-                      />
-                      <div className="profile-text">
-                        <p className="subheading">Hi! I'm Shaiza!</p>
-                        <p className="regular-text">
-                          I'm a university student who's been involved with
-                          technology, and more specifically, coding, for over 8
-                          years. I currently specialize in design and front-end
-                          development of websites, apps etc! I like to spend my
-                          time mkaing things, either in creative aspects
-                          (stories, poems, photography) or learning new tips &
-                          tricks in the coding world!
-                        </p>
-                      </div>
-                    </div>
+                {/*desktop mode general div*/}
+                <div className="general-banner-row">
+                  <div id="title-and-occupation">
+                    <p className="resume-name-heading">Shaiza Hashmi</p>
+                    <p className="resume-occupation-heading">
+                      Software Developer
+                    </p>
                   </div>
-                  <div className="education">
-                    <p className="heading">EDUCATION</p>
-                    <p className="subheading">University of Guelph</p>
-                    <div className="education-content">
-                      <div className="ed-text">
-                        <p className="uni-year">2019 - 2023</p>
-                        <p>Bachelor of Computing, Honours</p>
-                        <p className="specifics">Major: Computer Science</p>
-                        <p className="specifics">Minor: Statistics</p>
-                      </div>
+                  <div className="contact-information">
+                    <div className="phone-num contact-info-line">
+                      <p>416-912-8654</p>
                       <img
-                        className="guelph-pic"
-                        src={unipic}
-                        alt="University of Guelph Logo"
+                        src={greenphone}
+                        alt="Linkedin Logo"
+                        className="contact-icons"
+                      />
+                    </div>
+                    <div className="linkedin contact-info-line">
+                      <p>in/shaiza-hashmi</p>
+                      <img
+                        src={greenLinkedin}
+                        alt="Linkedin Logo"
+                        className="contact-icons"
+                      />
+                    </div>
+                    <div className="email contact-info-line">
+                      <p>soloyyz2000@yahoo.com</p>
+                      <img
+                        src={greenemail}
+                        alt="Linkedin Logo"
+                        className="contact-icons"
                       />
                     </div>
                   </div>
                 </div>
-                <div className="row-two">
-                  <div className="col-left">
-                    <div className="skills">
-                      <p className="heading">TECHNOLOGIES and FRAMEWORKS</p>
-                      <div className="all-icons">
-                        <ReactTooltip id="LogoTip" place="top" effect="solid" />
+                <div className="profile-blurb">
+                  <img
+                    className="profile-icon"
+                    src={profileicon}
+                    alt="Icon Picture, Girl with Curly Hair"
+                  />
+                  <div>
+                    <p className="blurb-text">
+                      Currently a 4th year Honours Student at the University of
+                      Guelph. Recognized for having a strong desire to work with
+                      future technological leaders in the industry for both
+                      professional and personal growth. A quick learner, ready
+                      to overcome any challenges that come her way.
+                    </p>
+                    <p className="blurb-text">
+                      I'm a university student who's been involved with
+                      technology, and more specifically, coding, for over 8
+                      years. I currently specialize in design and front-end
+                      development of websites, apps etc! I like to spend my time
+                      making things, either in creative aspects (stories, poems,
+                      photography) or learning new tips & tricks in the coding
+                      world!
+                    </p>
+                  </div>
+                </div>
+                <div className="rest-of-page">
+                  <div className="left-column">
+                    <div className="skills-tech column-border">
+                      <div className="box-header">
+                        <img
+                          src={wrenchicon}
+                          alt="wrench icon"
+                          className="box-icon"
+                        />
+                        <p className="box-header-text">TOOLS & TECHNOLOGIES</p>
+                      </div>
+
+                      <div className="all-tool-icons">
+                        <ReactTooltip id="LogoTip" />
                         <div className="row-tech">
+                          <img
+                            className="icon-sizes"
+                            src={reactlogo}
+                            alt="React"
+                            data-tip="React"
+                            data-for="LogoTip"
+                          />
                           <img
                             className="icon-sizes"
                             src={htmllogo}
                             alt="HTML"
                             data-tip="HTML"
+                            data-for="LogoTip"
+                          />
+                          <img
+                            className="icon-sizes"
+                            src={csslogo}
+                            alt="CSS"
+                            data-tip="CSS"
+                            data-for="LogoTip"
+                          />
+                          <img
+                            className="icon-sizes"
+                            src={javascripylogo}
+                            alt="Javascript"
+                            data-tip="Javascript"
+                            data-for="LogoTip"
+                          />
+                          <img
+                            className="icon-sizes"
+                            src={nodelogo}
+                            alt="Node"
+                            data-tip="Node"
+                            data-for="LogoTip"
+                          />
+                        </div>
+                        <div className="row-tech">
+                          <img
+                            className="icon-sizes"
+                            src={androidlogo}
+                            alt="Android"
+                            data-tip="Android"
+                            data-for="LogoTip"
+                          />
+                          <img
+                            className="icon-sizes"
+                            src={flutterlogo}
+                            alt="Flutter"
+                            data-tip="Flutter"
+                            data-for="LogoTip"
+                          />
+                          <img
+                            className="icon-sizes"
+                            src={autodesklogo}
+                            alt="Autodesk Suite"
+                            data-tip="Autodesk Suite"
+                            data-for="LogoTip"
+                          />
+                          <img
+                            className="icon-sizes"
+                            src={webgllogo}
+                            alt="WebGL"
+                            data-tip="WebGL"
+                            data-for="LogoTip"
+                          />
+                        </div>
+                        <div className="row-tech">
+                          <img
+                            className="icon-sizes"
+                            src={figmalogo}
+                            alt="Figma"
+                            data-tip="Figma"
                             data-for="LogoTip"
                           />
                           <img
@@ -103,7 +431,7 @@ class Resume extends Component {
                           <img
                             className="icon-sizes"
                             src={clogo}
-                            alt="C"
+                            alt="C Programming Language"
                             data-tip="C Programming Language"
                             data-for="LogoTip"
                           />
@@ -116,46 +444,9 @@ class Resume extends Component {
                           />
                           <img
                             className="icon-sizes"
-                            src={csslogo}
-                            alt="CSS"
-                            data-tip="CSS"
-                            data-for="LogoTip"
-                          />
-                        </div>
-                        <div className="row-tech">
-                          <img
-                            className="icon-sizes"
-                            src={reactlogo}
-                            alt="React"
-                            data-tip="React"
-                            data-for="LogoTip"
-                          />
-                          <img
-                            className="icon-sizes"
-                            src={flutterlogo}
-                            alt="Flutter"
-                            data-tip="Flutter"
-                            data-for="LogoTip"
-                          />
-                          <img
-                            className="icon-sizes"
-                            src={nodelogo}
-                            alt="Node JS"
-                            data-tip="Node js"
-                            data-for="LogoTip"
-                          />
-                          <img
-                            className="icon-sizes"
-                            src={androidlogo}
-                            alt="Android"
-                            data-tip="Andriod SDK"
-                            data-for="LogoTip"
-                          />
-                          <img
-                            className="icon-sizes"
                             src={gitlogo}
-                            alt="GIT"
-                            data-tip="GIT with Gitlab & Github"
+                            alt="Git"
+                            data-tip="Git"
                             data-for="LogoTip"
                           />
                         </div>
@@ -165,6 +456,13 @@ class Resume extends Component {
                             src={androidstudiologo}
                             alt="Android Studio"
                             data-tip="Android Studio"
+                            data-for="LogoTip"
+                          />
+                          <img
+                            className="icon-sizes"
+                            src={vscodelogo}
+                            alt="VSCode"
+                            data-tip="Visual Studio Code"
                             data-for="LogoTip"
                           />
                           <img
@@ -183,185 +481,229 @@ class Resume extends Component {
                           />
                           <img
                             className="icon-sizes"
-                            src={vscodelogo}
-                            alt="VS Code"
-                            data-tip="Visual Studio Code"
+                            src={bashlogo}
+                            alt="Bash"
+                            data-tip="Bash"
                             data-for="LogoTip"
                           />
                         </div>
                       </div>
                     </div>
-                    <div className="extra">
-                      <p className="heading">EXTRACURRICULARS</p>
-                      <div className="club">
-                        <p className="position">President</p>
-                        <p className="regular-text company">
-                          Guelph Coding Community (GCC)
-                        </p>
-                        <p className="regular-text">
-                          Founded in 2013, GCC facilitates student-run
-                          workshops, tutorials, demos, networking sessions,
-                          social nights, and presentations for students of all
-                          backgrounds and skill-levels. GCC workshops are
-                          designed by passionate students and guest speakers to
-                          teach all manner of new skills. We focus on providing
-                          students with valuable, hands-on, extracurricular tech
-                          skills which cannot normally be acquired through
-                          coursework.
-                        </p>
+                    <div className="projects column-border">
+                      <div className="box-header">
+                        <img
+                          src={toolboxicon}
+                          alt="wrench icon"
+                          className="box-icon"
+                        />
+                        <p className="box-header-text">PROJECTS</p>
                       </div>
-                      <div className="club">
-                        <p className="position">Co-Chairperson</p>
-                        <p className="regular-text company">GryphHacks</p>
-                        <p className="regular-text">
-                          University of Guelph's official annual hackathon. An
-                          organization run by students of Guelph Coding
-                          Community (GCC). Our aim is to inspire, mentor, and
-                          promote technological and social innovation through
-                          collaborative work over the course of 48 hours.
-                        </p>
+                      <div className="a-project row-flex">
+                        <div className="project-info">
+                          <p className="proj-title">Project LowKations</p>
+                          <p className="proj-subtitle">
+                            MapHacks - First Place Overall Winner
+                          </p>
+                          <ul class="style-change">
+                            <li>
+                              Designed & created wireframe prototype of the
+                              entire site, to a completed prototype using Figma
+                              within 8 hours.
+                            </li>
+                            <li>
+                              Used React, HTML, CSS and Javascript to establish
+                              and design various web Pages on the front-end
+                            </li>
+                            <li>
+                              A progressive web application where users can sign
+                              up and contribute to an ever-growing collection of
+                              hidden locations across the world, and view
+                              others’ postings as well.
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="links">
+                          <img
+                            src={greenfigma}
+                            alt="Lowkations Figma File"
+                            className="project-icon"
+                          />
+                          <img
+                            src={greengit}
+                            alt="Lowkations Github Repo"
+                            className="project-icon"
+                          />
+                          <img
+                            src={greendev}
+                            alt="Lowkations Devpost Submission"
+                            className="project-icon"
+                          />
+                        </div>
                       </div>
-                      <div className="club">
-                        <p className="position">Director of Marketing</p>
-                        <p className="regular-text company">
-                          C3 - Computing Councils of Canada
-                        </p>
-                        <p className="regular-text">
-                          The Computing Councils of Canada, also known as C^3
-                          (or CCubed), is a national organization of students
-                          aiming to create and foster an inclusive community for
-                          all students in computing-related fields across
-                          Canada. Our goal is to improve inter-school
-                          collaboration between computing student organizations,
-                          provide a support network, and connect students
-                          nationwide through our events.
-                        </p>
-                      </div>
-                      <div className="club">
-                        <p className="position">Vice President Finance</p>
-                        <p className="regular-text company">
-                          Society of Computing Information Science (SOCIS)
-                        </p>
-                        <p className="regular-text">
-                          The Official student society for the School of
-                          Computer Science students at the University of Guelph.
-                          SOCIS focuses on community building, creating
-                          opportunities for students, and advocating for
-                          students interests. We also run events, organize
-                          hackathons, administer clubs, and represent School of
-                          Computer Science students.
-                        </p>
+                      <div className="a-project row-flex">
+                        <div className="project-info">
+                          <p className="proj-title">
+                            Spheres - 2D & 3D Graphics
+                          </p>
+                          <p className="proj-subtitle">
+                            Exploring WebGL basics + implementation
+                          </p>
+                          <ul class="style-change">
+                            <li>
+                              Implemented 2D and 3D graphics through Geometry
+                              and matrix algebra for computer graphics using
+                              Javascript, Python and WebGL.
+                            </li>
+                            <li>
+                              Using visible surface detection and geometric
+                              modelling - including raytracing, rendered various
+                              forms of 3D graphics.
+                            </li>
+                            <li>
+                              Rendered rotating cubes, moving light sources,
+                              shadows and shaded vertices, and various
+                              polymorphic objects.
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="links">
+                          <img
+                            src={greenfigma}
+                            alt="Lowkations Figma File"
+                            className="project-icon"
+                          />
+                          <img
+                            src={greengit}
+                            alt="Lowkations Github Repo"
+                            className="project-icon"
+                          />
+                          <img
+                            src={greendev}
+                            alt="Lowkations Devpost Submission"
+                            className="project-icon"
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div className="projects">
-                    <p className="heading">PROJECTS</p>
-                    <div>
-                      <p className="subheading">Project Lowkation</p>
-                      <div className="basic-info">
-                        <div>
-                          <p className="proj-detail">Hackathon: MapHacks</p>
-                          <p className="proj-detail">Team Project</p>
-                          <p className="proj-detail">
-                            Web Designer & Frontend Developer
-                          </p>
-                          <p className="proj-detail">Dec 2021</p>
-                        </div>
-                        <div>
-                          <img
-                            className="project-pic"
-                            src={lowkations}
-                            alt="Lowkations Banner"
-                          />
-                        </div>
+                  <div className="middle-separator"></div>
+                  <div className="right-column ">
+                    <div className="education column-border">
+                      <div className="box-header">
+                        <img
+                          src={gradicon}
+                          alt="wrench icon"
+                          className="box-icon"
+                        />
+                        <p className="box-header-text">EDUCATION</p>
                       </div>
-                      <p className="regular-text">
-                        LowKation, short for Lowkey Locations, is a progressive
-                        web application where users can sign up and contribute
-                        to an ever-growing collection of hidden locations in the
-                        world, and view others’ postings as well.
-                      </p>
+                      <div className="row-flex">
+                        <p className="institute">UNIVERSITY OF GUELPH</p>
+                        <p className="resume-edu-year">2019 - Present</p>
+                      </div>
+                      <p className="bachelor">Bachelor of Computing, Honours</p>
+                      <p className="focuses">Major: Computer Science</p>
+                      <p className="focuses">Minor: Statistics</p>
+                      <div className="row-flex">
+                        <p className="clubs-title">
+                          President - Guelph Coding Community
+                        </p>
+                        <p className="clubs-dates">Jan 2020 - May 2022</p>
+                      </div>
+                      <div className="row-flex">
+                        <p className="clubs-title">
+                          VP Finance - Society of Computing Information Science
+                        </p>
+                        <p className="clubs-dates">May 2020 - May 2022</p>
+                      </div>
+                      <div className="row-flex">
+                        <p className="clubs-title">Web Developer - iGEM</p>
+                        <p className="clubs-dates">Feb 2022 - Present</p>
+                      </div>
+                      <div className="row-flex">
+                        <p className="clubs-title">
+                          Head of Marketing - HawkHacks
+                        </p>
+                        <p className="clubs-dates">Jan 2022 - May 2022</p>
+                      </div>
                     </div>
-                    <hr />
-                    <div>
-                      <p className="subheading">Project Lowkation</p>
-                      <div className="basic-info">
-                        <div>
-                          <p className="proj-detail">Hackathon: MapHacks</p>
-                          <p className="proj-detail">Team Project</p>
-                          <p className="proj-detail">
-                            Web Designer & Frontend Developer
-                          </p>
-                          <p className="proj-detail">Dec 2021</p>
-                        </div>
-                        <div>
-                          <img
-                            className="project-pic"
-                            src={lowkations}
-                            alt="Lowkations Banner"
-                          />
-                        </div>
+                    <div className="pro-exp column-border">
+                      <div className="box-header">
+                        <img
+                          src={laptopicon}
+                          alt="wrench icon"
+                          className="box-icon"
+                        />
+                        <p className="box-header-text">
+                          PROFESSIONAL EXPERIENCE
+                        </p>
                       </div>
-                      <p className="regular-text">
-                        LowKation, short for Lowkey Locations, is a progressive
-                        web application where users can sign up and contribute
-                        to an ever-growing collection of hidden locations in the
-                        world, and view others’ postings as well.
-                      </p>
-                    </div>
-                    <hr />
-                    <div>
-                      <p className="subheading">Project Lowkation</p>
-                      <div className="basic-info">
-                        <div>
-                          <p className="proj-detail">Hackathon: MapHacks</p>
-                          <p className="proj-detail">Team Project</p>
-                          <p className="proj-detail">
-                            Web Designer & Frontend Developer
-                          </p>
-                          <p className="proj-detail">Dec 2021</p>
-                        </div>
-                        <div>
-                          <img
-                            className="project-pic"
-                            src={lowkations}
-                            alt="Lowkations Banner"
-                          />
-                        </div>
+                      <div className="club">
+                        <p className="club-pos">
+                          Co-Founder and Co-Chairperson
+                        </p>
+                        <p className="club-name">
+                          GryphHacks @ University of Guelph
+                        </p>
+                        <p className="club-years">May 2021 - Present</p>
+                        <ul className="style-change">
+                          <li>
+                            Create and build from the ground up an organization
+                            at the university under the SOCCSO.
+                          </li>
+                          <li>
+                            Create and lead a team of 20+ students, to
+                            facilitate and organize a yearly international
+                            event, hosted by the university, partnered with MLH.
+                          </li>
+                          <li>
+                            Foster relationships with various companies,
+                            organizations and external partners to allow Guelph
+                            Computing students a chance to learn and gain
+                            industry-level skills, right at the university.
+                          </li>
+                          <li>
+                            Promote internationally for hackers, mentors and
+                            judges alike.
+                          </li>
+                          <li>
+                            Form a bridge between the university and alumni for
+                            current students to take advantage and learn the
+                            tips and tricks needed to survive in a competitive
+                            industry.
+                          </li>
+                        </ul>
                       </div>
-                      <p className="regular-text">
-                        LowKation, short for Lowkey Locations, is a progressive
-                        web application where users can sign up and contribute
-                        to an ever-growing collection of hidden locations in the
-                        world, and view others’ postings as well.
-                      </p>
-                    </div>
-                    <hr />
-                    <div>
-                      <p className="subheading">Project Lowkation</p>
-                      <div className="basic-info">
-                        <div>
-                          <p className="proj-detail">Hackathon: MapHacks</p>
-                          <p className="proj-detail">Team Project</p>
-                          <p className="proj-detail">
-                            Web Designer & Frontend Developer
-                          </p>
-                          <p className="proj-detail">Dec 2021</p>
-                        </div>
-                        <div>
-                          <img
-                            className="project-pic"
-                            src={lowkations}
-                            alt="Lowkations Banner"
-                          />
-                        </div>
+                      <div className="club">
+                        <p className="club-pos">
+                          Co-Founder and Director of Marketing
+                        </p>
+                        <p className="club-name">
+                          Ccubed - A Nonprofit Organization
+                        </p>
+                        <p className="club-years">Oct 2020 - Present</p>
+                        <ul className="style-change">
+                          Manage a team of students, dedicated to the following:
+                          <li>
+                            Create and organize all marketing graphics,
+                            announcements and information relayed to the
+                            students regarding club events and important
+                            notices.
+                          </li>
+                          <li>
+                            Build up and manage all 7+ social media accounts of
+                            this organization, interacting with 1000+ students
+                            nationwide and 30+ other Universities' equivalent CS
+                            student governments to foster mutually beneficial
+                            relations to spread word about our events.
+                          </li>
+                          <li>
+                            Repost and spread the word of our partnered
+                            Universities' events and materials to further aid
+                            and increase their outreach.
+                          </li>
+                        </ul>
                       </div>
-                      <p className="regular-text">
-                        LowKation, short for Lowkey Locations, is a progressive
-                        web application where users can sign up and contribute
-                        to an ever-growing collection of hidden locations in the
-                        world, and view others’ postings as well.
-                      </p>
                     </div>
                   </div>
                 </div>
