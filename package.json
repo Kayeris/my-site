@@ -1,5 +1,6 @@
 {
   "name": "my-site",
+  "homepage": "https://zasha.tech",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

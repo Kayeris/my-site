@@ -435,7 +435,7 @@ class Resume extends Component {
                             className="mobile-contact-icon"
                           />
                           <p className="mobile-contact-text">
-                            soloyyz2000@yahoo.com
+                            contactme@zasha.tech
                           </p>
                         </div>
                       </div>
@@ -455,7 +455,7 @@ class Resume extends Component {
                   </div>
                   <div className="contact-information">
                     <div className="phone-num contact-info-line">
-                      <p>416-912-8654</p>
+                      <p>xxx-xxx-xxxx</p>
                       <img
                         src={greenphone}
                         alt="Linkedin Logo"
@@ -471,7 +471,7 @@ class Resume extends Component {
                       />
                     </div>
                     <div className="email contact-info-line">
-                      <p>soloyyz2000@yahoo.com</p>
+                      <p>contactme@zasha.tech</p>
                       <img
                         src={greenemail}
                         alt="Linkedin Logo"

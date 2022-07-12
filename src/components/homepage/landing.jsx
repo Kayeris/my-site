@@ -58,7 +58,7 @@ class Landing extends Component {
                       Software Developer, Writer, Photographer
                     </p>
                     <p className="edu-year-mob">
-                      3rd year Honours @ University of Guelph
+                      4th year Honours @ University of Guelph
                     </p>
                     <div className="align-the-button-mob">
                       <button className="hire-btn-mob" onClick={HireMe}>
@@ -103,7 +103,7 @@ class Landing extends Component {
                           Software Developer, Writer, Photographer
                         </p>
                         <p className="edu-year">
-                          3rd year Honours @ University of Guelph
+                          4th year Honours @ University of Guelph
                         </p>
                       </div>
                     </div>
